@@ -10,6 +10,10 @@
   },
   "devDependencies": {
     "@types/node": "^18",
-    "nuxt": "^3.4.1"
+    "nuxt": "^3.4.1",
+    "sass": "^1.62.1"
+  },
+  "dependencies": {
+    "vue3-carousel": "^0.3.1"
   }
 }

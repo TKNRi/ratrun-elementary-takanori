@@ -1,14 +1,18 @@
 <template>
- <div>
-  <p>ヘッダー<p>
-  <NuxtPage />
-  <p>フッター<p>
- </div>
+  <div>
+    <AppHeader />
+    <NuxtPage />
+    <AppFooter />
+    <p></p>
+  </div>
 </template>
 
 <script>
- export default {
- };
+import { AppHeader } from "../components/organisms/Header";
+import { AppFooter } from "../components/organisms/Footer";
+export default {
+  components: { AppHeader, AppFooter },
+};
 </script>
 
 <style lang='scss' scoped>
