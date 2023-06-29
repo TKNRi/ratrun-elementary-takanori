@@ -8,6 +8,7 @@ export default {
     text: { type: String, default: null },
     color: { type: Number, default: null },
     backGround: { type: String, default: "white" },
+    borderRadius: { type: Number, default: "10px" },
   },
   emits: ["click"],
   setup(_, { emit }) {
@@ -26,5 +27,6 @@ button {
   background-color: v-bind(backGround);
   border-color: v-bind(backGround);
   color: v-bind(color);
+  border-radius: v-bind(borderRadius);
 }
 </style>

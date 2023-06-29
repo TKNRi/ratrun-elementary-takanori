@@ -155,7 +155,7 @@
             <BasicButton
               text="詳しく見る"
               backGround="blue"
-              color="black"
+              color="white"
               @click="handleClick"
             />
           </div>
@@ -175,7 +175,7 @@
             <BasicButton
               text="詳しく見る"
               backGround="blue"
-              color="black"
+              color="white"
               @click="handleClick"
             />
           </div>
@@ -195,7 +195,7 @@
             <BasicButton
               text="詳しく見る"
               backGround="blue"
-              color="black"
+              color="white"
               @click="handleClick"
             />
           </div>
@@ -462,27 +462,15 @@
           タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。
         </p>
       </div>
+      <div class="contact-button">
+        <BasicButton
+          text="お問い合わせ・お見積り"
+          backGround="blue"
+          color="white"
+          @click="handleClick"
+        />
+      </div>
     </section>
-    <BasicButton
-      text="詳しく見る"
-      backGround="blue"
-      color="black"
-      @click="handleClick"
-    />
-    <div class="contact-button">
-      <BasicButton
-        text="お問い合わせ・お見積り"
-        backGround="blue"
-        color="black"
-        @click="handleClick"
-      />
-      <BasicButton
-        text="詳しく見る"
-        backGround="blue"
-        color="black"
-        @click="handleClick"
-      />
-    </div>
 
     <!--<section>
       <div>
@@ -510,10 +498,10 @@ export default {
       console.log("ボタンを押した");
     };
     const sliders = reactive([
-      "img9@2x.png",
-      "img9@2x.png",
-      "img9@2x.png",
-      "img9@2x.png",
+      "kitchen-g48679c8a0_1280.png",
+      "kitchen-g48679c8a0_1280.png",
+      "kitchen-g48679c8a0_1280.png",
+      "kitchen-g48679c8a0_1280.png",
     ]);
     return { handleClick, sliders };
   },
@@ -665,6 +653,10 @@ img {
   }
 }
 
+.philosophy-button {
+  text-align: center;
+}
+
 .table-first {
   background-color: gray;
   border: solid 1px #000;
@@ -676,13 +668,6 @@ img {
 
 .price {
   margin-top: 80px;
-}
-
-.price-content {
-  //@include mq("sp") {
-  //  display: block;
-  //  margin-top: 52px;
-  //}
 }
 
 .price-table {
@@ -755,10 +740,6 @@ img {
   display: flex;
   justify-content: space-between;
   padding: 0 10%;
-  //@include tablet {
-  //  display: block;
-  //  text-align: center;
-  //}
 
   @include mobile {
     display: block;
@@ -950,5 +931,9 @@ td {
 .news-footer {
   text-align: center;
   margin-top: 48px;
+}
+
+.contact-button {
+  text-align: center;
 }
 </style>
